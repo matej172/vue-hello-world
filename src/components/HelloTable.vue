@@ -1,6 +1,6 @@
 <template>
   <table>
-    <tr v-for="index in rows" :key="index">
+    <tr v-for="i in rows" :key="i">
       <td v-for="j in cols" :key="j">
         {{j}}
       </td>
@@ -11,12 +11,14 @@
 <script>
 export default {
   name: "HelloTable",
-  data(){
-    return {
-      rows:25,
-      cols:16,
-    }
+
+  props:{
+    rows: Number,
+    cols: Number
   },
+  mounted() {
+    console.log(this.rows)
+  }
 }
 </script>
 

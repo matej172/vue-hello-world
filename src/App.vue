@@ -1,7 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to My Vue.js App" poznamka="Toto je webte1 prednáška"/>
-  <HelloTable rows=5 cols=8></HelloTable>
+  <HelloTable :rows=5 :cols=8></HelloTable>
 </template>
 
 <script>
